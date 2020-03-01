@@ -1,14 +1,23 @@
-from application import db
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+import os
 
-class Posts(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    first_name = db.Column(db.String(30), nullable=False)
-    last_name = db.Column(db.String(30), nullable=False)
-    title = db.Column(db.String(100), nullable=False, unique=True)
-    content = db.Column(db.String(100), nullable=False, unique=True)
 
-    def __repr__(self):
-        return ''.join([
-            'User: ', self.first_name, ' ', self.last_name, '\r\n',
-            'Title: ', self.title, '\r\n', self.content
-        ])
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://stef@project1db:Thisisstup1d@project1db.mysql.database.azure.com/proj1db"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+
+class User(db.Model):
+        __tablename__ = 'users'
+        user_id = db.Column('user_id', db.Integer, primary_key=True)
+        password = db.Column('password', db.Unicode)
+        email = db.Column('email', db.Unicode, index=True, unique=True)
+        book_list_id = db.Column('book_list_id', db.Integer)
+
+class Bookss(db.Model):
+        __tablename__ = 'books'
+        book_id = db.Column('book_id', db.Integer, primary_key=True)
+        title = db.Column('title', db.Unicode)
+        author = db.Column('author', db.Unicode)
