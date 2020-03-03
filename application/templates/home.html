@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% block body_content %}
-    <h1>Home Page</h1>
-    <p>Welcome to this web app!</p>
-        <div>
-            <h3>{{ post.title }}</h3>
-        </div>
-{% endblock body_content %}
+  {% for i in post %}
+    <div>
+      <p><b>  Title:  </b>{{ i.title }}</p>
+      <p><b>  Author:  </b>{{ i.author }}</p>
+      <p><b>  Rating:   </b>{{ i.average_rating }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}
