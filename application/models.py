@@ -25,7 +25,7 @@ class Bookss(db.Model):
         book_id = db.Column('book_id', db.Integer, primary_key=True)
         title = db.Column('title', db.String(250))
         author = db.Column('author', db.String(250))
-        rating = db.Column('average_rating', db.String(10))
+        rating = db.Column('average_rating', db.Unicode(10))
 
         def get_id(self):
             return self.book_id
