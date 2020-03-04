@@ -46,10 +46,10 @@ class Booklist(db.Model):
         def get_id(self):
             return self.book_list_id
 
-
-   # def __repr__(self):
-    #    return ''.join([
-     #               ])
+        def __repr__(self):
+            return ''.join([
+                
+     ])
 
 
 @login_manager.user_loader
