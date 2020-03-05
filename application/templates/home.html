@@ -1,24 +1,25 @@
 {% extends "layout.html" %}
 {% block body_content %}
   {% for i in post %}
+
+<div class="container">
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col"></th>
-      <th scope="col">Title</th>
-      <th scope="col">Author</th>
-      <th scope="col">Rating</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Rating</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row"></th>
       <td>{{ i.title }}</td>
       <td>{{ i.author }}</td>
       <td>{{ i.average_rating }}</td>
     </tr>
    </tbody>
   </table>
+</div>
+</div>
  {% endfor %}
 {% endblock %}
-
