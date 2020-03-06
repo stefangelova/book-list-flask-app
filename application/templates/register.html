@@ -1,10 +1,17 @@
 {% extends "layout.html" %}
 {% block body_content %}
-<h1>Register Page</h1>
-    <p>Need an account? Sign up</p>
     <div class='form'>
-        <form method='POST' action=''>
-            {{ form.hidden_tag() }}
+ <div class="container">
+   <br />
+      <br />
+       <br />
+   <h3 class="text-center text-green pt-5">Register</h3>
+   <div id="login-row" class="row justify-content-center align-items-center">       
+ <form method='POST' action=''>
+ <br />
+      <br />
+       <br />           
+ {{ form.hidden_tag() }}
             <div class="form-group">
                 {{ form.first_name.label }}
                 {{ form.first_name }}
@@ -69,5 +76,6 @@
             </div>
         </form>
     </div>
-
+  </div/>
+</div>
 {% endblock %}

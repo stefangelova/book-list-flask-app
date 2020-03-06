@@ -2,7 +2,17 @@
 
 {% block body_content %}
 <div class='form'>
-    <form method='POST' action=''>
+ <div class="container">   
+   <br />
+      <br />
+       <br />
+   <h3 class="text-center text-green pt-5">Login</h3>
+   <div id="login-row" class="row justify-content-center align-items-center">
+     <form method='POST' action=''>
+         <br />
+          <br />
+           <br />
+            <br />
         {{ form.hidden_tag() }}
         <div class='form_group'>
             {{ form.email.label }}
@@ -35,5 +45,7 @@
             {{ form.submit }}
         </div>
     </form>
+  </div>
+ </div>
 </div>
 {% endblock %}

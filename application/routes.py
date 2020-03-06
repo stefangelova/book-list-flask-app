@@ -4,6 +4,7 @@ from flask_login import login_user, current_user, logout_user, login_required
 from application.forms import RegistrationForm, LoginForm, UpdateAccountForm
 from flask import render_template, redirect, url_for, request
 
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -79,8 +80,10 @@ def account():
 @app.route("/account/delete", methods=["GET", "POST"])
 @login_required
 def account_delete():
-    user = current_user.id
-    account = User.query.filter_by(id=user).first()
+    user = current_user.user_id
+    account = User.query.filter_by(user_id=user)
+    account = User.query.filter_by(user_id=user).first()
     logout_user()
     db.session.delete(account)
+    db.session.commit()
     return redirect(url_for('register'))
