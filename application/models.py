@@ -9,7 +9,6 @@ class User(db.Model, UserMixin):
        	email = db.Column('email',db.String(150), nullable=False, unique=True)
         password = db.Column('password', db.String(500), nullable=False)
 
-        book_list_id = db.Column('book_list_id', db.Integer, db.ForeignKey('booklist.book_list_id'), nullable=False)
 
         def get_id(self):
             return self.user_id
@@ -34,7 +33,7 @@ class Bookss(db.Model):
             return ''.join([
 		'Titles:', self.title, '\r\n',
 	        'Authors:', self.author, '\r\n',
-                'Ratings:', self.average_rating, '\r\n'
+                'Ratings:', str(self.rating), '\r\n'
                 ])
 class Booklist(db.Model):
         __tablename__ = 'booklist'
@@ -45,11 +44,6 @@ class Booklist(db.Model):
 
         def get_id(self):
             return self.book_list_id
-
-        def __repr__(self):
-            return ''.join([
-                
-     ])
 
 
 @login_manager.user_loader

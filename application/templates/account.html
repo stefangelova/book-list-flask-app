@@ -1,6 +1,27 @@
 {% extends "layout.html" %}
 {% block body_content %}
-    <div class='form'>
+
+<div class="container">
+<table class="table table-bordered">
+  {% for i in booklist %}
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{ i.title }}</td>
+      <td>{{ i.author }}</td>
+      <td>{{ i.average_rating }}</td>
+    </tr>
+   </tbody>
+   {% endfor %}
+  </table>
+</div>   
+ <div class='form'>
  <div class="container">
    <br />
       <br />

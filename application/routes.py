@@ -1,8 +1,10 @@
 from application import app, db, bcrypt
-from application.models import Bookss, User
+from application.models import Bookss, User, Booklist
 from flask_login import login_user, current_user, logout_user, login_required
 from application.forms import RegistrationForm, LoginForm, UpdateAccountForm
 from flask import render_template, redirect, url_for, request
+from flask import request
+
 
 
 @app.route('/')
@@ -10,13 +12,25 @@ from flask import render_template, redirect, url_for, request
 def home():
     postData = Bookss.query.all()[:10]
     return render_template('home.html', title='Home', post=postData)
-#@approutes('/add')
-#def add():
-#    addbook = SELECT && FROM Bookss, ADD TO current_user.Booklist;
 
 @app.route('/about')
 def about():
     return render_template('about.html', title='about')
+
+@app.route('/add_book', methods=['GET', 'POST'])
+@login_required
+def add_book():
+    user_id = current_user.user_id
+    selected_book_title = request.form.get('comp_select')
+    book_id = db.session.query(Bookss).filter(Bookss.title == selected_book_title).first().book_id
+    book_list = Booklist(
+                 book_id = book_id,
+                 user_id = user_id
+                 )
+
+    db.session.add(book_list)
+    db.session.commit()
+    return redirect(url_for('account'))
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
