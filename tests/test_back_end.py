@@ -12,7 +12,7 @@ class TestBase(TestCase):
         # pass in configurations for test database
         config_name = 'testing'
         app.config.update(
-            SQLALCHEMY_DATABASE_URI='mysql+pymysql://stef@project1db:Thisisstup1d@project1db.mysql.database.azure.com/proj1dbtest'     )
+            SQLALCHEMY_DATABASE_URI='mysql+pymysql://stef@project1db:Thisisstup1d@project1db.mysql.database.azure.com/test'     )
         return app
 
     def setUp(self):

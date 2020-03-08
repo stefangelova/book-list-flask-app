@@ -62,14 +62,7 @@
         </form>
 <div class="container">
 <table class="table table-bordered">
-  {% for i in booklist %}
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Author</th>
-      <th>Rating</th>
-    </tr>
-  </thead>
+  {% for i in book_list %}
   <tbody>
     <tr>
       <td>{{ i.title }}</td>
@@ -80,11 +73,6 @@
    {% endfor %}
   </table>
 </div>
-
-
-
-
-
 
 
 
