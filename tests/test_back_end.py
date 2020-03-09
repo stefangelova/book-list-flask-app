@@ -31,7 +31,7 @@ class TestBase(TestCase):
     def tearDown(self):
         db.session.remove()
         db.drop_all()
-
+        db.create_all()
 
 class TestViews(TestBase):
 
