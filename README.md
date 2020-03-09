@@ -9,7 +9,7 @@ For this project I have created a web application;Reading List, which allows use
 
 ## CI Pipeline
 
-[I'm a relative reference to a repository file](theapp/documentation/Untitled Diagram (1))
+[I'm a relative reference to a repository file](theapp/documentation/Untitled Diagram (1).jpg)
 
 [Trello](https://trello.com/b/P7tHO21p)
 
