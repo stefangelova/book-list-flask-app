@@ -29,11 +29,11 @@ For this project I have created a web application;Reading List, which allows use
 ## Risk Assessment 
 
 ## Issues Encountered
-
+An unforseen amount of issues were encountered during the development of the application 
 
 ## Future Refactoring 
 
-There are many 
+There are many functionalities that I would like to incorporate into my application in the future.To begin with I would liek to create a search function which would allow users to search the database and add books to their reading lists. As I was not able to complete it, I would like to be able to display the reading lists of the users in their accounts. Another good idea would be to have a book reviewing functionality which would allow users to share reviews of the books they have read as well as read reviews of other users. The users should also be able to upload profile photos. I would also like to incorporate ratings for the books which would be submitted by the users, consequently calculating the average book rating as rated by the users of the website. A good feature to have would be to provide links to websites or bookstores which sell the books that the particular user is interested in reading. What is more I would like to incorporate a suggestion function so that users are able to receive siggestions which cater to their expressed interest in specific genres. 
 
 
 The application can be accessed by clicking [here](http://51.104.242.2:5000)
