@@ -11,9 +11,14 @@ For this project I have created a web application;Reading List, which allows use
 
 ![CI Pipeline](https://github.com/stefangelova/theapp/blob/master/documentation/Untitled%20Diagram%20(1).jpg)
 
-
-
-
+##Technologies:
+Mysql Workbench
+Python
+Flask
+Github
+Azure
+Jenkins
+Pytest
 [Trello](https://trello.com/b/P7tHO21p)
 
 
