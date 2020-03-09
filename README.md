@@ -21,9 +21,19 @@ For this project I have created a web application;Reading List, which allows use
   * Pytest
   * [Trello](https://trello.com/b/P7tHO21p)
 
-ERD Diagram
+## ERD Diagram
 
 ![ERD Diagram](https://github.com/stefangelova/theapp/blob/master/documentation/Capture.jpg)
 
 
-Application IP address: 51.104.242.2:5000
+## Risk Assessment 
+
+## Issues Encountered
+
+
+## Future Refactoring 
+
+There are many 
+
+
+The application can be accessed here: [app](51.104.242.2:5000)
