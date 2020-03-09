@@ -36,4 +36,4 @@ For this project I have created a web application;Reading List, which allows use
 There are many 
 
 
-The application can be accessed here: [app](http://51.104.242.2:5000)
+The application can be accessed by clicking [here](http://51.104.242.2:5000)
