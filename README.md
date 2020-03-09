@@ -9,7 +9,11 @@ For this project I have created a web application;Reading List, which allows use
 
 ## CI Pipeline
 
-![https://github.com/stefangelova/theapp/edit/master/README.md]
+!(https://github.com/stefangelova/theapp/blob/master/documentation/Untitled%20Diagram%20(1).jpg)
+
+
+
+
 [Trello](https://trello.com/b/P7tHO21p)
 
 
