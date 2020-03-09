@@ -38,6 +38,7 @@ For this project I have created a web application; Reading List, which allows us
 ## Issues Encountered
 
 An unforeseen amount of issues was encountered during the development of the application such as the amount of trial and error which occurred. In addition, the lack of close familiarity with the technologies greatly impacted the timely and efficient development of certain features. The time and structure that was planned initially contrasted almost completely with the execution, however the robust planning did help with minimise the impact and maintain a certain structure. An unfortunate issue I encountered was while conducting the testing, which proved to be an unexpectedly arduous task, which unfortunately could not successfully complete leaving the coverage at 40%. Another issue I encountered was the displaying of data, which impacted both, displaying the reading list of each user as well as the displaying of the average rating of each book.
+![test](https://github.com/stefangelova/theapp/blob/master/documentation/Capture1.PNG)
 
 
 ## Future Refactoring 
